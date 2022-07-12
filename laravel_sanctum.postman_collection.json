@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "6b674a9a-e1bb-498d-ad67-4b52bf01cda8",
+		"name": "laravel_sanctum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5649240"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"gzeinnumer@gmail.com\",\n    \"password\" : \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://demo-laravel-login.gzeinnumer.com/api/login",
+					"protocol": "http",
+					"host": [
+						"demo-laravel-login",
+						"gzeinnumer",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"gzeinnumer1\",\n    \"email\" : \"gzeinnumer1@gmail.com\",\n    \"password\" : \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://demo-laravel-login.gzeinnumer.com/api/register",
+					"protocol": "http",
+					"host": [
+						"demo-laravel-login",
+						"gzeinnumer",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "me",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|G7COEr7H389Zb3PmlImu7ycTWgySvZ1XwQOtONND",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://demo-laravel-login.gzeinnumer.com/api/me",
+					"protocol": "http",
+					"host": [
+						"demo-laravel-login",
+						"gzeinnumer",
+						"com"
+					],
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

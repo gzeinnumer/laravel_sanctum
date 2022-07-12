@@ -3,7 +3,7 @@
 https://www.twilio.com/blog/build-restful-api-php-laravel-sanctum
 
 
-- http://localhost:8000/api/register
+- http://demo-laravel-login.gzeinnumer.com/api/register
 Request
 ```
 {
@@ -20,7 +20,7 @@ Response
 }
 ```
 
-- http://localhost:8000/api/login
+- http://demo-laravel-login.gzeinnumer.com/api/login
 
 Request
 ```
@@ -38,7 +38,7 @@ Response
 }
 ```
 
-- http://localhost:8000/api/me
+- http://demo-laravel-login.gzeinnumer.com/api/me
 
 ![](/preview/preview_1.png)
 
