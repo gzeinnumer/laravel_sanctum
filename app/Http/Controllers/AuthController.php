@@ -56,10 +56,4 @@ class AuthController extends Controller
     {
         return $request->user();
     }
-
-
-    public function me2(Request $request)
-    {
-        return $request->all();
-    }
 }
