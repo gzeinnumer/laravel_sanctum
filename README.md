@@ -41,3 +41,9 @@ Response
 - http://localhost:8000/api/me
 
 ![](/preview/preview_1.png)
+
+---
+
+```
+Copyright 2022 M. Fadli Zein
+```
