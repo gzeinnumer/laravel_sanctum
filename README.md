@@ -40,4 +40,4 @@ Response
 
 - http://localhost:8000/api/me
 
-![]('preview/preview_1.png')
+![]('/preview/preview_1.png')
