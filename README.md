@@ -3,6 +3,17 @@
 https://www.twilio.com/blog/build-restful-api-php-laravel-sanctum
 
 
+- Route
+```php
+Route::post('/me', [AuthController::class, 'me']);
+
+Route::post('/me', [AuthController::class, 'me'])->middleware('auth:sanctum');
+
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::post('/me', [AuthController::class, 'me']);
+});
+```
+
 - http://demo-laravel-login.gzeinnumer.com/api/register
 Request
 ```
